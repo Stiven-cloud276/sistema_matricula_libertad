@@ -1,0 +1,32 @@
+{
+  "name": "sistema_matricula_libertad",
+  "version": "1.0.0",
+  "description": "Sistema académico de matrículas escolares · SENATI · Colegio de la Libertad, Huaraz",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "create-admin": "node scripts/create-admin.js",
+    "recover-access": "node scripts/recover-access.js",
+    "db:inspect": "node scripts/inspect-db.js",
+    "db:export-schema": "node scripts/export-schema.js",
+    "db:migrate-sections-2026": "node scripts/migrate-sections-2026.js",
+    "check": "node scripts/check-syntax.js",
+    "test": "node --test --test-concurrency=1 tests/*.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "argon2": "^0.45.1",
+    "bootstrap": "^5.3.8",
+    "bootstrap-icons": "^1.13.2",
+    "dotenv": "^18.0.8",
+    "express": "^5.3.0",
+    "express-rate-limit": "^8.7.1",
+    "express-session": "^1.19.0",
+    "helmet": "^8.3.0",
+    "mariadb": "^3.5.4"
+  }
+}
